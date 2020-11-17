@@ -48,5 +48,5 @@ mvn clean package -DskipTests
 cd target
 java -cp globalKineticWeb.jar:globalKineticWeb-tests.jar:libs/* org.testng.TestNG ../testng.xml
 
-
-
+#Ignore 
+Ignore dockerfile as project is not containerized yet
