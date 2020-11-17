@@ -1,87 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43884" started-at="2019-10-29T20:59:42 SAST" finished-at="2019-10-29T21:00:26 SAST">
+  <suite name="Global Kinetics Web" duration-ms="5556" started-at="2020-11-17T11:35:09 SAST" finished-at="2020-11-17T11:35:15 SAST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43884" started-at="2019-10-29T20:59:42 SAST" finished-at="2019-10-29T21:00:26 SAST">
-      <class name="granadilla.GetCoverWeb">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:granadilla.GetCoverWeb@57d7f8ca]" name="initialize" is-config="true" duration-ms="3184" started-at="2019-10-29T20:59:42 SAST" finished-at="2019-10-29T20:59:46 SAST">
+    <test name="Regression test" duration-ms="5556" started-at="2020-11-17T11:35:09 SAST" finished-at="2020-11-17T11:35:15 SAST">
+      <class name="webtests.Login">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:webtests.Login@72ef8d15]" name="initialize" is-config="true" duration-ms="1879" started-at="2020-11-17T11:35:09 SAST" finished-at="2020-11-17T11:35:11 SAST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="FAIL" signature="basePageNavigation()[pri:0, instance:granadilla.GetCoverWeb@57d7f8ca]" name="basePageNavigation" duration-ms="40508" started-at="2019-10-29T20:59:46 SAST" finished-at="2019-10-29T21:00:26 SAST">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=78.0.3904.70)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'Faatimas-MBP.Dlink', ip: 'fd01:0:0:0:f9d1:f45:624f:9cd2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/zv/bvjmx7s12b9...}, goog:chromeOptions: {debuggerAddress: localhost:64942}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 14f84ba828699448032af723d454afa1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=78.0.3904.70)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'Faatimas-MBP.Dlink', ip: 'fd01:0:0:0:f9d1:f45:624f:9cd2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/zv/bvjmx7s12b9...}, goog:chromeOptions: {debuggerAddress: localhost:64942}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 14f84ba828699448032af723d454afa1
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at granadilla.GetCoverWeb.basePageNavigation(GetCoverWeb.java:95)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+        <test-method status="PASS" signature="titleTest()[pri:0, instance:webtests.Login@72ef8d15]" name="titleTest" duration-ms="305" started-at="2020-11-17T11:35:11 SAST" finished-at="2020-11-17T11:35:12 SAST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:granadilla.GetCoverWeb@57d7f8ca]" name="teardown" is-config="true" duration-ms="144" started-at="2019-10-29T21:00:26 SAST" finished-at="2019-10-29T21:00:26 SAST">
+        </test-method> <!-- titleTest -->
+        <test-method status="PASS" signature="testLoginFail()[pri:1, instance:webtests.Login@72ef8d15]" name="testLoginFail" duration-ms="85" started-at="2020-11-17T11:35:12 SAST" finished-at="2020-11-17T11:35:12 SAST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginFail -->
+        <test-method status="PASS" signature="testLoginStandardUser()[pri:2, instance:webtests.Login@72ef8d15]" name="testLoginStandardUser" duration-ms="2366" started-at="2020-11-17T11:35:12 SAST" finished-at="2020-11-17T11:35:14 SAST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginStandardUser -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:webtests.Login@72ef8d15]" name="teardown" is-config="true" duration-ms="85" started-at="2020-11-17T11:35:15 SAST" finished-at="2020-11-17T11:35:15 SAST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- granadilla.GetCoverWeb -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- webtests.Login -->
+      <class name="webtests.AddToCart">
+        <test-method status="PASS" signature="addMultipleProductsTocart()[pri:0, instance:webtests.AddToCart@6aa8e115]" name="addMultipleProductsTocart" duration-ms="217" started-at="2020-11-17T11:35:14 SAST" finished-at="2020-11-17T11:35:14 SAST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMultipleProductsTocart -->
+        <test-method status="PASS" signature="removeProductFromCart()[pri:1, instance:webtests.AddToCart@6aa8e115]" name="removeProductFromCart" duration-ms="70" started-at="2020-11-17T11:35:14 SAST" finished-at="2020-11-17T11:35:14 SAST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeProductFromCart -->
+      </class> <!-- webtests.AddToCart -->
+      <class name="webtests.Checkout">
+        <test-method status="PASS" signature="goToCheckOut()[pri:0, instance:webtests.Checkout@5e21e98f]" name="goToCheckOut" duration-ms="156" started-at="2020-11-17T11:35:14 SAST" finished-at="2020-11-17T11:35:15 SAST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCheckOut -->
+        <test-method status="PASS" signature="enterDetails()[pri:1, instance:webtests.Checkout@5e21e98f]" name="enterDetails" duration-ms="351" started-at="2020-11-17T11:35:15 SAST" finished-at="2020-11-17T11:35:15 SAST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterDetails -->
+      </class> <!-- webtests.Checkout -->
+    </test> <!-- Regression test -->
+  </suite> <!-- Global Kinetics Web -->
 </testng-results>

@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Global Kinetics Web]">
+  <listeners>
+    <listener class-name="webtests.Listeners"/>
+    <listener class-name="webtests.ExecutionListener"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Regression test(failed)">
     <classes>
-      <class name="granadilla.GetCoverWeb">
+      <class name="webtests.AddToCart">
         <methods>
-          <include name="basePageNavigation"/>
-          <include name="initialize"/>
-          <include name="teardown"/>
+          <include name="addMultipleProductsTocart"/>
         </methods>
-      </class> <!-- granadilla.GetCoverWeb -->
+      </class> <!-- webtests.AddToCart -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Regression test(failed) -->
+</suite> <!-- Failed suite [Global Kinetics Web] -->

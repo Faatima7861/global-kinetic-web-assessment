@@ -1,5 +1,7 @@
-/Users/faatimabismilla/eclipse-workspace/granadillaAutomation/src/main/java/resources/ExtentReporterNG.java
-/Users/faatimabismilla/eclipse-workspace/granadillaAutomation/src/main/java/granadilla/App.java
-/Users/faatimabismilla/eclipse-workspace/granadillaAutomation/src/main/java/pageObjects/LoginPage.java
-/Users/faatimabismilla/eclipse-workspace/granadillaAutomation/src/main/java/resources/Browsers.java
-/Users/faatimabismilla/eclipse-workspace/granadillaAutomation/src/main/java/pageObjects/GetCoverWebPF.java
+/Users/faatima/eclipse-workspace/DemoWorkspace/global-kinetic-web/src/main/java/resources/ExtentReporterNGold.java
+/Users/faatima/eclipse-workspace/DemoWorkspace/global-kinetic-web/src/main/java/pageObjects/LoginPF.java
+/Users/faatima/eclipse-workspace/DemoWorkspace/global-kinetic-web/src/main/java/pageObjects/CheckoutPF.java
+/Users/faatima/eclipse-workspace/DemoWorkspace/global-kinetic-web/src/main/java/TestData/DataGenerator.java
+/Users/faatima/eclipse-workspace/DemoWorkspace/global-kinetic-web/src/main/java/resources/ExtentReporterNG.java
+/Users/faatima/eclipse-workspace/DemoWorkspace/global-kinetic-web/src/main/java/pageObjects/AddToCartPF.java
+/Users/faatima/eclipse-workspace/DemoWorkspace/global-kinetic-web/src/main/java/resources/Base.java

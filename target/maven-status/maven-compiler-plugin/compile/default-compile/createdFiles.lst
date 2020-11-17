@@ -1,0 +1,7 @@
+resources/ExtentReporterNGold.class
+resources/ExtentReporterNG.class
+pageObjects/CheckoutPF.class
+pageObjects/AddToCartPF.class
+pageObjects/LoginPF.class
+TestData/DataGenerator.class
+resources/Base.class

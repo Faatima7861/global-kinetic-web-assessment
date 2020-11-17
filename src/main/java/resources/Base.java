@@ -14,7 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Browsers {
+public class Base {
 
 	public static WebDriver driver;
 	public Properties prop;
@@ -22,15 +22,26 @@ public class Browsers {
 	public WebDriver initializeDriver() throws IOException {
 
 		prop = new Properties();
+
 		FileInputStream fis = new FileInputStream(
-				"/Users/faatimabismilla/eclipse-workspace/AutomationTemplate/src/main/java/resources/data.properties");
+				System.getProperty("user.dir") + "//src//main//java//resources//data.properties");
+		// "/Users/faatima/eclipse-workspace/DemoWorkspace/global-kinetic-web/src/main/java/resources/data.properties");
 
 		prop.load(fis);
+		// String browserName = "chrome";
 		String browserName = prop.getProperty("browser");
 		System.out.println(browserName);
 
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "//Users//faatimabismilla//Documents//chromedriver");
+			// System.setProperty("webdriver.chrome.driver",
+			// "//Users//faatimabismilla//Documents//chromedriver");
+
+			String path = System.getProperty("user.dir"); // return project folder path
+
+			String driverpath = path + "//libs//chromedriver"; // return driver folder path
+
+			System.setProperty("webdriver.chrome.driver", driverpath);
+
 			driver = new ChromeDriver();
 
 		} else if (browserName.equals("firefox")) {
@@ -46,8 +57,9 @@ public class Browsers {
 	}
 
 	public void getScreenshot(String result) throws IOException {
-		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("C://test//" + result + "screenshot.png")); // put correct file path in mac ??
+		// File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		// FileUtils.copyFile(src, new File("C://test//" + result + "screenshot.png"));
+		// // put correct file path in mac ??
 
 	}
 

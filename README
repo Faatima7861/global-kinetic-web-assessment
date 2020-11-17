@@ -1,0 +1,52 @@
+Author : Faatima Bismilla
+Read me last updated : 12 November 2020
+Project inception : 11 November
+
+#Introduction/Test design
+This is the web automation test project for https://www.saucedemo.com/ 
+Developed using : Selenium and Java
+Design : Page object model with page factories
+Framework : TestNG 
+IDE : Eclpise
+Build : Maven 
+Reporting : Extent report from Test NG 
+Github Repo : https://github.com/Faatima7861/global-kinetic-web.git
+Versions of software : Use latest if possible
+
+#Get up and running locally 
+1. Clone the project from gihub
+2. Import into eclipse IDE 
+3. Update project (Right click on pom.xml -> Maven -> Update Project) 
+4. On Update being successful with successful downloading of dependencies you can run the project. 
+5. Right click on testng.xml -> Run as -> TestNG Suite
+
+#Potential errors that may occur : 
+1. Local chrome driver and chromedriver.exe in the project are not the same version. Ensure they are the same. 
+2. Chromedriver.exe in the project may be imported without write and execute permissions. 
+3. Class paths not found. Try and update the project again. Check version of dependency it is complaining abaout. 
+
+#Reporting
+After successful test execution, The ExtentReporterNG.java class will create a folder in your user directory. 
+The Reports folder will contain an index.html file that you can open in your browser. If you are unable to find this 
+search your laptop for a Reports folder. 
+If a Reports folder is not created, manually create one and re-run the test suite locally. 
+The index.html file will then be generated in that location. 
+Example of test result location locally : file:///Users/faatima/eclipse-workspace/DemoWorkspace/global-kinetic-web/Reports/index.html#
+
+IF NEEDED : 
+#Build project with jar file creation
+Pom file must have final, target and all dependencies needed to build project via command line. 
+After build ensure .jar files are created in target folder of project. (.jar name given in pom file) 
+then run java -cp command - .jar file names are different for each project. 
+
+
+#Build Project via terminal and have jar files created
+cd /Users/faatima/eclipse-workspace/DemoWorkspace/global-kinetic-web (use your location)
+mvn clean package -DskipTests
+
+#Run jar files 
+cd target
+java -cp globalKineticWeb.jar:globalKineticWeb-tests.jar:libs/* org.testng.TestNG ../testng.xml
+
+
+
